@@ -50,43 +50,37 @@
 
   <section class="section" id="cover">
     <div class="bg-shadow">
-      <nav class="navbar navbar-expand-lg navbar-inverse">
-        <div class="container">
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="img/sushi-logo.png" alt="Logo" class="img-logo">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <h5 class="text-white h4">Collapsed content</h5>
+          <span class="text-muted">Toggleable via the navbar brand.</span>
+        </div>
+      </div>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="#" class="logo">
+            <img src="img/sushi-logo.png" alt="Kimo Sushi" />
           </a>
-          <!-- Links Navbar -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="menu-toggle" aria-label="Apri menu">
+            <span class="menu-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> <!-- ms-auto per allineare a destra -->
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="navbar-links">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contatti</a></li>
+          </ul>
         </div>
       </nav>
-                  <div class="container text-center caption">
+      <div class="container text-center caption">
         <div class="caption">
-      <h1 class="main-title">Il gusto della tradizione</h1>
-      <h2 class="secondary-title">伝統の味</h2>
-      <a href="#prenota" class="button">Prenota</a>
-      <p class="arrow scroll"><a href="#menu"><i class="fa fa-angle-down clr-white-10" aria-hidden="true"></i></a></p>
+          <h1 class="main-title">Il gusto della tradizione</h1>
+          <h2 class="secondary-title">伝統の味</h2>
+          <a href="#prenota" class="button">Prenota</a>
+          <p class="arrow scroll"><a href="#menu"><i class="fa fa-angle-down clr-white-10" aria-hidden="true"></i></a></p>
         </div>
+      </div>
     </div>
-  </div>
   </section>
 
 
@@ -304,20 +298,41 @@
     </div>
 </section>
 
-<section id="contatti">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-12">
-          <ul>
-            <li>Home</li>
-            <li>Menu</li>
-            <li>About</li>
-            <li>Dove siamo</li>
-          </ul>
-        </div>
-      </div>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="img/sushi-logo.png" alt="Logo di Kimo Sushi" />
     </div>
-</section>
+
+    <div class="footer-links">
+      <h4>Contatti</h4>
+      <ul>
+        <li><a href="tel:+390123456789">📞 +39 012 345 6789</a></li>
+        <li><a href="mailto:info@kimosushi.it">✉️ info@kimosushi.it</a></li>
+        <li>📍 Via Roma 123, Napoli</li>
+      </ul>
+    </div>
+
+    <div class="footer-hours">
+      <h4>Orari</h4>
+      <ul>
+        <li>Lun - Ven: 12:00 - 15:00 / 19:00 - 23:00</li>
+        <li>Sab - Dom: 12:00 - 23:30</li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Seguici</h4>
+      <a href="#" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="#" aria-label="TripAdvisor"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Kimo Sushi. Tutti i diritti riservati.</p>
+  </div>
+</footer>
 
 
 
@@ -345,6 +360,14 @@
 
 <!-- Plugin Fullpage-->
 <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navbarLinks = document.querySelector('.navbar-links');
+
+  menuToggle.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active');
+  });
+</script>
 
 
 <!-- Inizializzazioni-->

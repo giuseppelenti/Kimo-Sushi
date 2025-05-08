@@ -1,0 +1,586 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+	font-family: "Source Sans Pro";
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+.no-pad {
+	padding: 0;
+}
+.pad-left {
+	margin-left: 30px;
+}
+
+.bd-radius img{border: 1px solid white; border-radius: 15px;}
+.bg-shadow{background-color: rgba(0,0,0,0.4); height: 100vh;}
+
+
+.col-4-1, .col-4-2, .col-4-3, .col-4-4 {
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.col-4-1 {
+	width: 25%;
+}
+.col-4-2 {
+	width: 50%;
+}
+.col-4-3 {
+	width: 75%;
+}
+.col-4-4 {
+	width: 100%;
+}
+
+.col-lg-4 p {
+  display: flex; /* Makes the paragraph a flex container */
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  height: 100%; /* Ensures the paragraph takes the full height of its container */
+  margin: 0; /* Removes any default margin */
+}
+
+.col-lg-4 img {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Ensures proper rendering */
+}
+
+#social-bar {
+	position: fixed;
+	top: 300px;
+	right: 0px;
+}
+#social-bar a {
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: rgba(255,255,255,1.00);
+	text-decoration: none;
+	display: block;
+	margin-bottom: 10px;
+	background-color: rgba(0,0,0,0.19);
+	font-size: 24px;
+	-webkit-transition: all 400ms ease-out 0s;
+	-o-transition: all 400ms ease-out 0s;
+	border-radius: 4px;
+	transition: all 400ms ease-out 0s;
+}
+#social-facebook:hover {
+	background-color: rgba(59,89,152,1.00);
+}
+#social-instagram:hover {
+	background-color: rgba(151,34,93,1.00);
+}
+#social-twitter:hover {
+	background-color: rgba(29,161,242,1.00);
+}
+
+.white-space{height: 30vh;}
+
+/*------------------------
+Navbar
+-------------------------*/
+
+.navbar{
+	min-height: 70px;
+	border: none !important;
+}
+.navbar-absolute-top{
+	position: absolute;
+	top: 0;
+}
+.navbar-brand,
+.navbar li a{
+	padding-top: 0px;
+	height: 70px;
+	line-height: 70px;
+}
+.navbar.navbar-inverse {
+	height: 90px;
+	background-color: #112825;
+}
+.navbar-brand{width: 70;  height: 70px;}
+.navbar-inverse .navbar-nav > li > a {color: white;}
+
+.navbar-inverse .navbar-toggle{margin-top: 20px;}
+.navbar-inverse .navbar-nav > .active > a:hover{
+	background: #112825;
+	text-align: left;
+}
+.navbar-inverse .navbar-collapse{
+	border: none !important; /* Ensure no border is applied */
+}
+
+.navbar ul{font-size: 17px;}
+
+.img-logo{
+	width: 50%;
+	margin-top: 5rem;
+}
+
+/* Navbar container */
+.navbar .container {
+	display: flex;
+	align-items: center; /* Allineamento verticale */
+	justify-content: space-between; /* Distanza tra logo e menu */
+	padding: 0 15px; /* Spaziatura interna della navbar */
+	height: 70px; /* Altezza fissa della navbar */
+	margin-top: 2rem;
+  }
+  
+  /* Logo container */
+/* Navbar Styles */
+.navbar {
+	min-height: 70px;
+	display: flex;
+	align-items: center; /* Allinea verticalmente gli elementi */
+	box-shadow: none; /* Remove any shadow that might look like a border */
+  }
+  
+  .navbar .container {
+	display: flex;
+	justify-content: space-between; /* Spaziatura tra logo e links */
+	align-items: center;
+	padding: 0 15px; /* Spaziatura laterale */
+  }
+  
+  .navbar-brand {
+	display: flex;
+	align-items: center; /* Allinea verticalmente il logo */
+	height: 70px; /* Altezza della navbar */
+	padding: 0;
+  }
+  
+  .navbar-nav {
+	display: flex;
+	justify-content: flex-end; /* Allinea i link a destra */
+	gap: 5rem; /* Aggiungi spazio tra le voci */
+	list-style: none;
+  }
+  
+  .navbar-toggler {
+	border: none;
+	background: transparent;
+  }
+	
+  .navbar-toggle .icon-bar {
+	background-color: white;
+  }
+	}
+/*------------------------
+Cover
+-------------------------*/
+/* Stile per l'immagine del logo */
+
+  
+  /* Navbar personalizzata */
+  .navbar {
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-link {
+	margin-left: 1rem;
+	transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+	color: #ff4081 !important;
+  }
+  
+  /* Compensazione navbar fissa */
+  
+#cover{
+	text-align: center;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	background-image: url(img/AdobeStock_138255984.jpeg);
+  height: 100vh;
+}
+#cover p {
+	margin: 0;
+}
+
+.caption{padding-top: 15rem;}
+  .main-title{
+	font-size: 70px;
+	font-weight: lighter;
+	margin-top: 130px;
+}
+  .secondary-title{
+	font-size: 50px;
+	margin: 0 auto;
+}
+  .button{
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 10px 30px;
+	border: 1px solid;
+	display: inline-block;
+	margin-top: 10rem;
+	margin-right: 20px;
+	margin-bottom: 16rem;
+	border-radius: 5px;
+	transition: 0.5s ease;
+}
+  .button:hover{
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFFFF;
+	
+}
+.button:active {
+	color: #FFFFFF;
+}
+  .arrow .fa {
+	font-size: 62px;
+	margin-left: -10px;
+	transition: 0.5s ease;
+}
+
+.arrow .fa:hover {
+	transform: scale(1.5);
+}
+
+/*------------------------
+Parallax
+-------------------------*/
+.parallax {
+	width: 100%;
+	height: 400px;
+	background-image: url(img/sfondo.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+
+#menu{
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	color: rgba(0,0,0,1.00);
+}
+#menu h1 {
+	font-size: 50px;
+	display: inline-block;
+	margin-bottom: 50px;
+	padding-bottom: 0px;
+}
+
+.size   {
+	width: 100%;
+	height: auto;
+	border: 3px solid #FFFFFF;
+	padding-right: 0px;
+}
+.align-left {
+	text-align: left;
+}
+#menu h4 {
+	padding: 0;
+	font-weight: bold;
+	margin-bottom: 0px;
+	font-size: 25px;
+}
+#menu p {
+	font-style: italic;
+	font-weight: lighter;
+	padding-top: 0px;
+	font-size: 15px;
+}
+
+
+
+
+
+/*------------------------
+About
+-------------------------*/
+#about{
+	background-color: #FFFFFF;
+}
+#about h2 {
+	font-size: 50px;
+}
+.img-about.img-responsive {
+	padding: 0;
+	margin: 0;
+}
+
+#about p {
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+
+.banner{background: #fff;height: 50%;margin-top: 50px; margin-bottom: 50px;}
+.banner-img{
+	width: 30%;
+	float: left;
+	background-size: cover;
+	background-position: center center;
+	height: 350px;
+	background-image: url(img/about_1.jpg);
+	border-radius: 30px;
+}
+.banner-copy{
+	width: 70%;
+	float: left;
+	display: table;
+}
+.banner-copy-text{display: table-cell; vertical-align: middle;padding: 0px 30px 30px 30px;}
+
+.banner-copy-text h3{font-size: 36px; margin-bottom: 0;}
+.banner-copy-text h4{font-size: 22px; margin: 5px 0;}
+
+.banner h2 {
+  margin-bottom: 60px; /* Adjust the value as needed */
+}
+
+.secondary-parallax {
+	width: 100%;
+	height: auto;
+	background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.60) 0.14%,rgba(0,0,0,0.60) 100%), url(img/AdobeStock_160776300_Preview.jpeg);
+	background-image: -moz-linear-gradient(270deg,rgba(0,0,0,0.60) 0.14%,rgba(0,0,0,0.60) 100%), url(img/AdobeStock_160776300_Preview.jpeg);
+	background-image: -o-linear-gradient(270deg,rgba(0,0,0,0.60) 0.14%,rgba(0,0,0,0.60) 100%), url(img/AdobeStock_160776300_Preview.jpeg);
+	background-image: linear-gradient(180deg,rgba(0,0,0,0.60) 0.14%,rgba(0,0,0,0.60) 100%), url(img/AdobeStock_160776300_Preview.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-color: rgba(0,0,0,0.59);
+	color: rgba(255,255,255,1.00);
+	padding: 10rem 0 !important;
+}
+.container {
+	padding: 0;
+}
+
+
+ul.who-social  {
+	padding: 0;
+	list-style-type: none;
+	margin-bottom: 50px;
+}
+ul.who-social  li {
+	display: inline-block;
+}
+ul.who-social  li a {
+	color: rgba(255,255,255,1.00);
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	display: block;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgba(9,50,44,1.00);
+	margin-right: 30px;
+	-webkit-transition: all 400ms ease-out 0s;
+	-o-transition: all 400ms ease-out 0s;
+	border-radius: 50%;
+	transition: all 400ms ease-out 0s;
+}
+ul.who-social  li a:hover {
+	color: rgba(255,255,255,1);
+	background-color: rgba(177,104,129,1);
+}
+.secondary-button {
+	font-size: 14px;
+	color: #fff;
+	padding: 10px 30px;
+	border: 1px solid #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 20px;
+	margin-bottom: 230px;
+	background-color: transparent;
+}
+
+/* Who-social container */
+.who-social {
+  display: flex; /* Makes the list a flex container */
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Centers the icons vertically */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  list-style: none; /* Removes bullet points */
+}
+
+/* Individual list items */
+.who-social li {
+  width: 40px; /* Set width to 40px */
+  height: 40px; /* Set height to 40px */
+  margin: 0 10px; /* Adds spacing between the icons */
+  display: flex; /* Makes the list item a flex container */
+  justify-content: center; /* Centers the icon horizontally */
+  align-items: center; /* Centers the icon vertically */
+  background-color: #f5f5f5; /* Optional: Add a background color */
+  border-radius: 50%; /* Makes the list item circular */
+}
+
+/* Anchor links inside list items */
+.who-social a {
+  display: inline-block; /* Ensures proper rendering of the icons */
+  font-size: 20px; /* Adjust the size of the icons */
+  color: #000; /* Default color for the icons */
+  text-align: center; /* Centers the icon text */
+  line-height: 1; /* Ensures proper alignment */
+  width: 100%; /* Ensures the icon fills the list item */
+  height: 100%; /* Ensures the icon fills the list item */
+}
+
+.who-social a:hover {
+  color: #d81b60; /* Change color on hover */
+}
+
+/*------------------------
+Contatti
+-------------------------*/
+
+#contatti{
+	background-color: #112825;
+	color: #FFFFFF;
+	font-size: 17px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-top: 50px;
+}
+#contatti ul {
+	list-style-type: none;
+	margin-top: 50px;
+}
+#contatti ul li {
+	padding: 0 20px;
+	display: inline;
+}
+#contatti p {
+	margin-left: 50px;
+	display: inline;
+}
+#contatti .fa {
+	padding-right: 10px;
+}
+
+
+.booking-form {
+	max-width: 700px;
+	margin: auto;
+	padding: 2rem;
+	background-color: #fff;
+	border-radius: 12px;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  }
+
+  .booking-form h2 {
+	text-align: left;
+	margin-bottom: 1.5rem;
+	color: black;
+  }
+
+  .form-group {
+	margin-bottom: 1rem;
+  }
+
+  .form-group label {
+	display: block;
+	margin-bottom: 0.4rem;
+	font-weight: bold;
+	color: black;
+	text-align: left;
+	font-size: 2rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+	width: 100%;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 1.3rem;
+	color: black;
+  }
+
+  .form-group textarea {
+	resize: vertical;
+  }
+
+  button {
+	width: 100%;
+	padding: 0.8rem;
+	font-size: 2rem;
+	background-color: #d81b60;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+	background-color: #ad1457;
+  }
+
+  #scrolltop{cursor: pointer;}
+/*------------------------
+Desktop
+-------------------------*/
+
+@media (min-width: 1023px){
+
+    .navbar{
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+    .navbar.navbar-inverse{background-color: transparent;}
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover{background-color: transparent; color: #eee;}
+	.nav.navbar-nav.navbar-right li a:hover {
+	border-bottom: 1px solid #FFFFFF;
+
+}
+.nav.navbar-nav.navbar-right li a:active {
+	border-bottom: 1px solid #FFFFFF;
+
+}
+}
+.secondary-button {
+	margin: 0;
+}
+
+@media (max-width: 1022px) {
+
+	.banner{height: 950px;}
+
+  .banner-img,
+  .banner-copy{width: 100%;height: 50%;}
+	.banner-img{margin-bottom: 50px;}
+
+}
+

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,415 +12,606 @@
     <title>Kimo Sushi</title>
 
     <!-- CSS googlemaps -->
-	<link href="css/googlemaps.css" rel="stylesheet" type="text/css">
+    <link href="css/googlemaps.css" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Font Awesome CSS -->
     <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,700" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-   <!-- Stili locali -->
+
+    <!-- Stili locali -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animations.css">
 
     <!-- Essentials -->
     <link href="css/essentials.css" rel="stylesheet" type="text/css">
     <link href="css/scrolltop.css" rel="stylesheet" type="text/css">
     <link href="css/preload.css" rel="stylesheet" type="text/css">
-  </head>
+</head>
+
 <body>
-<div id="preload">
-  <div class="spinner">
-    <div class="double-bounce1"></div>
-    <div class="double-bounce2"></div>
-  </div>
-</div>
+    <div id="preload">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
 
 
 
 
 
-  <!--************* COVER *************-->
+    <!----------------------------------------------- COVER -------------------------------------->
 
+<section class="cover" id="cover">
 
-
-
-
-  <section class="section" id="cover">
-    <div class="bg-shadow">
       <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
-        </div>
+          <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
       </div>
-      <nav class="navbar">
-        <div class="navbar-container">
+
+
+    <!--------------- NAVBAR --------------->
+      <header class="header">
+          <!-- Logo -->
           <a href="#" class="logo">
-            <img src="img/sushi-logo.png" alt="Kimo Sushi" />
+              <img src="img/sushi-logo.png" alt="Kimo Sushi Logo" width="50px" height="50px">
           </a>
-          <button class="menu-toggle" aria-label="Apri menu">
-            <span class="menu-icon"></span>
-          </button>
-          <ul class="navbar-links">
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contatti</a></li>
-          </ul>
-        </div>
-      </nav>
-      <div class="container text-center caption">
-        <div class="caption">
-          <h1 class="main-title">Il gusto della tradizione</h1>
-          <h2 class="secondary-title">伝統の味</h2>
-          <a href="#prenota" class="button">Prenota</a>
-          <p class="arrow scroll"><a href="#menu"><i class="fa fa-angle-down clr-white-10" aria-hidden="true"></i></a></p>
-        </div>
-      </div>
-    </div>
-  </section>
+
+          <nav>
+              <!-- Menu Button (Checkbox for mobile toggle) -->
+              <input class="menu-btn" type="checkbox" id="menu-btn" aria-label="Toggle Navigation Menu">
+              <!-- Icon (Label for the checkbox) -->
+              <label class="menu-icon" for="menu-btn">
+                  <span class="navicon"></span>
+              </label>
+              <!-- Menu -->
+              <ul class="menu">
+                  <li><a href="#cover">Home</a></li>
+                  <li><a href="#menu">Menu</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#prenota">Contact</a></li>
+              </ul>
+          </nav>
+      </header>
 
 
-
-
-
-    <!--------------- MENU --------------->
-
-
-
-
-
-  <section class="section mar-btm-050" id="menu">
-    <div class="container">
-      <h1 class="pad-btm-020 text-center f-size-32">Menu</h1>
-<div class="row">
-        <div class="col-lg-6 align-left">
-          <div>
-            <div class="bd-radius"><img src="img/menu_1.jpg" width="1313" height="876" class="size"></div>
-            <h4>Nigiri</h4>
-            <p>Piccole porzioni di riso pressato a mano con sopra fettine di pesce crudo (come salmone, tonno o gambero). È uno dei modi più puri per gustare il sapore del pesce.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/menu_2.jpg" width="1313" height="876" class="size"></div>
-            <h4>Hosomaki</h4>
-            <p>Rotolini di sushi sottili, con un solo ingrediente all'interno (come cetriolo, salmone o avocado), avvolti in alga nori. Perfetti per chi ama la semplicità.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/menu_3.jpg" width="1313" height="876" class="size"></div>
-            <h4>Uramaki</h4>
-            <p>Sushi “al contrario”, con il riso all’esterno e l’alga nori all’interno. Possono contenere ingredienti come gamberi fritti, avocado, salmone o maionese piccante.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/menu_4.jpg" width="1313" height="876" class="size"></div>
-            <h4>Sashimi</h4>
-            <p>Fette sottili di pesce crudo freschissimo servite senza riso. È una scelta raffinata per chi desidera gustare al meglio la qualità del pesce.</p>
-          </div>
-
-</div>
-
-
-
-        <div class="col-lg-6 align-left">
-<div>
-            <div class="bd-radius"><img src="img/menu_4.jpg" width="1313" height="876" class="size"></div>
-            <h4> Tempura Roll</h4>
-            <p>Roll di sushi con gamberi o verdure in tempura (frittura leggera giapponese), spesso accompagnati da salse speciali. Croccanti fuori e morbidi dentro.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/menu_5.jpg" width="1313" height="876" class="size"></div>
-            <h4>Veggie Roll</h4>
-            <p>Sushi roll vegetariano con ingredienti come avocado, cetriolo, carota, mango e tofu. Colorato, fresco e perfetto per chi cerca alternative senza pesce.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/menu_6.jpg" width="1313" height="876" class="size"></div>
-            <h4>Ebi Nigiri</h4>
-            <p>Nigiri con gambero cotto (ebi) adagiato sul riso. Una variante cotta molto apprezzata anche da chi è alle prime armi con il sushi.</p>
-          </div>
-          <div>
-            <div class="bd-radius"><img src="img/AdobeStock_160776300_Preview.jpeg" width="1313" height="876" class="size"></div>
-            <h4>Tataki di tonno</h4>
-            <p>Tonno scottato all'esterno e crudo all'interno, tagliato a fette e servito con salsa ponzu o sesamo. Un piatto raffinato e gustoso.</p>
-          </div>
-         </div>
-</div>
-    </div>
-  </section>
-  <section class="container-fluid parallax"></section>
-
-
-
-  <!--------------- ABOUT --------------->
-
-
-
-  <!--------------- ABOUT 2 --------------->
-
-  <section class="section container" id="about">
-    <section class="banner clearfix">
-      <div class="container">
-        <h2 class="text-center">About</h2>
-</div>
-
-      <div class="banner-copy">
-        <div class="banner-copy-text">
-          <p>Nel cuore della città, Kimo Sushi non è solo un ristorante di sushi: è un luogo dove la passione per la cucina giapponese si fonde con un’esperienza gastronomica curata nei minimi dettagli. Nato dal sogno di portare la vera essenza del Giappone in Italia, il nostro ristorante celebra ogni giorno l’arte culinaria nipponica attraverso ingredienti freschissimi, tecniche tradizionali e un'atmosfera raffinata ma accogliente.
-
-            Fin dal primo giorno, abbiamo voluto distinguerci per qualità, autenticità e attenzione verso ogni cliente. Ogni piatto che esce dalla nostra cucina è il frutto di una selezione rigorosa delle materie prime: pesce fresco scelto quotidianamente, riso giapponese cotto alla perfezione, verdure di stagione e condimenti tipici importati direttamente dal Giappone.
-            
-            Il nostro team è composto da chef altamente qualificati, con esperienza nei migliori ristoranti asiatici e una profonda conoscenza delle tradizioni culinarie giapponesi. Crediamo nella filosofia del “less is more”, dove l’equilibrio tra gusto, estetica e consistenza è tutto. Che si tratti di un delicato nigiri, di un uramaki creativo o di un piatto caldo come il ramen o il tataki, ogni proposta viene realizzata con la massima cura e precisione.</p>
-        </div>
-      </div>
-      <div class="banner-img">
-        <img src="img/about_1.jpg" alt="" width="300px">
-      </div>
-    </section>
-    <section class="banner clearfix">
-      <div class="banner-img">
-        <img src="img/about_2.jpg" alt="" width="300px">
-      </div>
-      <div class="banner-copy">
-        <div class="banner-copy-text">
-          <p>Da Kimo Sushi, l’esperienza non si limita al gusto: l’ambiente stesso è pensato per trasportarti in un angolo di Tokyo. Arredi minimalisti in legno, luci soffuse, dettagli in stile zen e una musica di sottofondo rilassante creano un'atmosfera ideale per ogni occasione – dalla cena romantica al pranzo di lavoro, fino alle serate tra amici.
-
-            Il nostro menu è vario e in continua evoluzione, per soddisfare ogni palato: dalle proposte più tradizionali come il sashimi e il chirashi, a creazioni fusion che uniscono sapori orientali e occidentali. Offriamo inoltre opzioni vegetariane, vegane e gluten-free, perché per noi l’inclusività è un valore fondamentale.
-            
-            In abbinamento, potrai scegliere tra un’accurata selezione di sakè premium, tè giapponesi pregiati, birre artigianali e vini italiani e internazionali. Il nostro staff è sempre disponibile per suggerirti l’abbinamento migliore e guidarti alla scoperta di nuovi sapori.
-            
-            Crediamo che ogni visita debba essere un momento speciale. Per questo, mettiamo al centro del nostro lavoro la cura dell’ospitalità: accogliamo ogni ospite con un sorriso sincero e ci impegniamo per offrire un servizio attento, discreto e personalizzato.</p>
-        </div>
-      </div>
-    </section>
-
-<div class="white-space"></div>
-
-
-	</section>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-lg-4 text-center" data-aos="fade-left" data-aos-once="true">
+    <!--------------- TITLE --------------->
+      <div class="caption">
+        <h1 class="main-title">Il gusto della tradizione</h1>
+        <h2 class="secondary-title">伝統の味</h2>
         <p>
-          <img src="img/team-01.jpg" width="330" height="330" class="img-responsive img-circle">
+        <a href="#prenota" class="button">Prenota</a>
         </p>
-        <h2 class="mar-btm-005">Patty Smith</h2>
-        <h4 class="mar-top-005 mar-btm-020">Chef</h4>
-        <ul class="who-social">
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
       </div>
-      <div class="col-lg-4 text-center" data-aos="fade" data-aos-once="true">
-        <p><img src="img/team-02.jpg" width="330" height="330" class="img-responsive img-circle"></p>
-        <h2 class="mar-btm-005">Lou Reed</h2>
-        <h4 class="mar-top-005 mar-btm-020">room manager</h4>
-        <ul class="who-social">
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
+
+  </section>
+
+
+
+
+    <!------------------------------------------------------ MENU ------------------------------------------------>
+
+    <section class="section mar-btm-050" id="menu">
+      <div class="container">
+        <h2 class="menu-title">Menu</h2>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="menu-item">
+              <img src="img/menu_1.jpg" alt="Nigiri - sushi con salmone, tonno o gambero">
+              <div class="menu-text">
+              <h3>Nigiri</h3>
+              <p>Piccole porzioni di riso pressato a mano con sopra fettine di pesce crudo (come salmone, tonno o gambero). È uno dei modi più puri per gustare il sapore del pesce.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/menu_2.jpg" alt="Hosomaki - rotolini con un solo ingrediente">
+              <div class="menu-text">
+              <h3>Hosomaki</h3>
+              <p>Rotolini di sushi sottili, con un solo ingrediente all'interno (come cetriolo, salmone o avocado), avvolti in alga nori. Perfetti per chi ama la semplicità.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/menu_3.jpg" alt="Uramaki - sushi al contrario con riso all'esterno">
+              <div class="menu-text">
+              <h3>Uramaki</h3>
+              <p>Sushi “al contrario”, con il riso all’esterno e l’alga nori all’interno. Possono contenere ingredienti come gamberi fritti, avocado, salmone o maionese piccante.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/menu_4.jpg" alt="Sashimi - fette di pesce crudo senza riso">
+              <div class="menu-text">
+              <h3>Sashimi</h3>
+              <p>Fette sottili di pesce crudo freschissimo servite senza riso. È una scelta raffinata per chi desidera gustare al meglio la qualità del pesce.</p>
+            </div>
+            </div>
+          </div>
+    
+          <div class="col-lg-6">
+            <div class="menu-item">
+              <img src="img/menu_4.jpg" alt="Tempura Roll - roll con verdure o gamberi in tempura">
+              <div class="menu-text">
+              <h3>Tempura Roll</h3>
+              <p>Roll di sushi con gamberi o verdure in tempura, spesso accompagnati da salse speciali. Croccanti fuori e morbidi dentro.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/menu_5.jpg" alt="Veggie Roll - sushi vegetariano con avocado, cetriolo, mango">
+              <div class="menu-text">
+              <h3>Veggie Roll</h3>
+              <p>Sushi roll vegetariano con ingredienti come avocado, cetriolo, carota, mango e tofu. Colorato, fresco e perfetto per chi cerca alternative senza pesce.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/menu_6.jpg" alt="Ebi Nigiri - nigiri con gambero cotto">
+              <div class="menu-text">
+              <h3>Ebi Nigiri</h3>
+              <p>Nigiri con gambero cotto (ebi) adagiato sul riso. Una variante cotta molto apprezzata anche da chi è alle prime armi con il sushi.</p>
+            </div>
+            </div>
+            <div class="menu-item">
+              <img src="img/AdobeStock_160776300_Preview.jpeg" alt="Tataki di tonno - scottato fuori, crudo dentro">
+              <div class="menu-text">
+              <h3>Tataki di tonno</h3>
+              <p>Tonno scottato all'esterno e crudo all'interno, tagliato a fette e servito con salsa ponzu o sesamo. Un piatto raffinato e gustoso.</p>
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-lg-4 text-center" data-aos="fade-right" data-aos-once="true">
-        <p><img src="img/team-03.jpg" width="330" height="330" class="img-responsive img-circle"></p>
-        <h2 class="mar-btm-005">Carole King</h2>
-        <h4 class="mar-top-005 mar-btm-020">waiter</h4>
-        <ul class="who-social">
-          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
+    </section>
+    
+
+
+
+
+
+    <!--------------------------------------------------------- ABOUT -------------------------------------------------->
+
+    <section class="section container-fluid fade-in" id="about">
+        <div class="container clearfix">
+            <div class="container">
+                <h2 class="about-title text-center">About</h2>
+            </div>
+
+            <div class="banner-copy">
+                <div class="banner-copy-text slide-in-right">
+                    <p>Nel cuore della città, Kimo Sushi non è solo un ristorante di sushi: è un luogo dove la passione per la cucina giapponese si fonde con un’esperienza gastronomica curata nei minimi dettagli. Nato dal sogno di portare la vera essenza
+                        del Giappone in Italia, il nostro ristorante celebra ogni giorno l’arte culinaria nipponica attraverso ingredienti freschissimi, tecniche tradizionali e un'atmosfera raffinata ma accogliente. Fin dal primo giorno, abbiamo voluto
+                        distinguerci per qualità, autenticità e attenzione verso ogni cliente. Ogni piatto che esce dalla nostra cucina è il frutto di una selezione rigorosa delle materie prime: pesce fresco scelto quotidianamente, riso giapponese cotto
+                        alla perfezione, verdure di stagione e condimenti tipici importati direttamente dal Giappone. Il nostro team è composto da chef altamente qualificati, con esperienza nei migliori ristoranti asiatici e una profonda conoscenza delle
+                        tradizioni culinarie giapponesi. Crediamo nella filosofia del “less is more”, dove l’equilibrio tra gusto, estetica e consistenza è tutto. Che si tratti di un delicato nigiri, di un uramaki creativo o di un piatto caldo come il
+                        ramen o il tataki, ogni proposta viene realizzata con la massima cura e precisione.</p>
+                </div>
+            </div>
+            <div class="banner-img" data-aos="fade-left">
+                <p alt="About Image" width="300px">
+            </div>
+          </div>
+
+
+    </section>
+
+
+    <!----------------------------------------------------------- TEAM --------------------------------------------------->
+    <div class="container-fluid bg-salmon">
+        <div class="row">
+            <div class="col-lg-4 text-center slide-in-top" data-aos="fade-left" data-aos-once="true">
+                <p>
+                    <img src="img/team-01.jpg" width="330" height="330" class="img-responsive img-circle">
+                </p>
+                <h2 class="mar-btm-005">Patty Smith</h2>
+                <h4 class="mar-top-005 mar-btm-020">Chef</h4>
+                <ul class="who-social">
+                    <li><a href="#"><i class="fa fa-facebook pulse" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter pulse" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram pulse" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 text-center  slide-in-top" data-aos="fade" data-aos-once="true">
+                <p><img src="img/team-02.jpg" width="330" height="330" class="img-responsive img-circle"></p>
+                <h2 class="mar-btm-005">Lou Reed</h2>
+                <h4 class="mar-top-005 mar-btm-020">room manager</h4>
+                <ul class="who-social">
+                    <li><a href="#"><i class="fa fa-facebook pulse" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter pulse" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram pulse" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 text-center  slide-in-top" data-aos="fade-right" data-aos-once="true">
+                <p><img src="img/team-03.jpg" width="330" height="330" class="img-responsive img-circle"></p>
+                <h2 class="mar-btm-005">Carole King</h2>
+                <h4 class="mar-top-005 mar-btm-020">waiter</h4>
+                <ul class="who-social">
+                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
     </div>
-  </div>
 
 
-    <!--------------- DOVE SIAMO --------------->
-
-
-
-
-  <section class="section" id="where"></section>
-
-
-
-  <section class="container secondary-parallax text-center" id="prenota">
+    <!------------------------------------------------------ GOOGLE MAPS ------------------------------------------------------>
+<section class="reviews-section" id="reviews">
     <div class="container">
-      <form class="booking-form" action="#" method="POST">
-        <h2>Prenota il tuo tavolo</h2>
-    
-        <div class="form-group">
-          <label for="nome">Nome e Cognome</label>
-          <input type="text" id="nome" name="nome" required>
+        <h2 class="section-title" data-translate="reviews">Reviews</h2>
+        
+        <div class="reviews-container">
+            
+                <!-- Sample reviews if none exist in the database -->
+                <div class="review-card scroll-animation in-view">
+                    <div class="review-header">
+                        <div class="review-avatar">J</div>
+                        <div class="review-info">
+                            <h4>John D.</h4>
+                            <div class="review-date">15 Aug 2023</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="review-content">Absolutely amazing sushi! The fish was incredibly fresh, and the service was impeccable. I'll definitely be coming back soon.</p>
+                </div>
+                
+                <div class="review-card scroll-animation delay-300 in-view">
+                    <div class="review-header">
+                        <div class="review-avatar">S</div>
+                        <div class="review-info">
+                            <h4>Sarah M.</h4>
+                            <div class="review-date">2 Jul 2023</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p class="review-content">Great atmosphere and delicious food. I particularly loved the Dragon Roll and the Sake selection. The staff was very knowledgeable about the menu.</p>
+                </div>
+                
+                <div class="review-card scroll-animation delay-600 in-view">
+                    <div class="review-header">
+                        <div class="review-avatar">R</div>
+                        <div class="review-info">
+                            <h4>Robert T.</h4>
+                            <div class="review-date">18 Jun 2023</div>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="review-content">I've been to many sushi restaurants around the world, and Kimo Sushi stands out for its authenticity and attention to detail. The omakase menu was a delightful experience.</p>
+                </div>
+            
         </div>
-    
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+        
+        <!-- Review Form -->
+        <div class="mt-5">
+            <div class="review-form">
+                <h3 class="text-center" data-translate="leave_review">Leave a Review</h3>
+                <form id="review-form" action="/review" method="post">
+                    <div class="form-group">
+                        <label for="review-name" data-translate="name">Name</label>
+                        <input type="text" id="review-name" name="name" class="form-control" required="">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-translate="your_rating">Your Rating</label>
+                        <div class="rating-select">
+                            <input type="radio" id="star5" name="rating" value="5">
+                            <label for="star5" title="5 stars">★</label>
+                            <input type="radio" id="star4" name="rating" value="4">
+                            <label for="star4" title="4 stars">★</label>
+                            <input type="radio" id="star3" name="rating" value="3">
+                            <label for="star3" title="3 stars">★</label>
+                            <input type="radio" id="star2" name="rating" value="2">
+                            <label for="star2" title="2 stars">★</label>
+                            <input type="radio" id="star1" name="rating" value="1">
+                            <label for="star1" title="1 star">★</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="review-comment" data-translate="your_review">Your Review</label>
+                        <textarea id="review-comment" name="comment" class="form-control" rows="4" required=""></textarea>
+                    </div>
+                    
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn-primary" data-translate="submit_review">Submit Review</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    
-        <div class="form-group">
-          <label for="telefono">Telefono</label>
-          <input type="tel" id="telefono" name="telefono" required>
-        </div>
-    
-        <div class="form-group">
-          <label for="data">Data</label>
-          <input type="date" id="data" name="data" required>
-        </div>
-    
-        <div class="form-group">
-          <label for="ora">Orario</label>
-          <input type="time" id="ora" name="ora" required>
-        </div>
-    
-        <div class="form-group">
-          <label for="persone">Numero di persone</label>
-          <select id="persone" name="persone" required>
-            <option value="">Seleziona</option>
-            <option value="1">1 persona</option>
-            <option value="2">2 persone</option>
-            <option value="3">3 persone</option>
-            <option value="4">4 persone</option>
-            <option value="5+">5 o più</option>
-          </select>
-        </div>
-    
-        <div class="form-group">
-          <label for="note">Note (opzionale)</label>
-          <textarea id="note" name="note" rows="3" placeholder="Allergie, preferenze, ecc."></textarea>
-        </div>
-    
-        <button type="submit">Invia Prenotazione</button>
-      </form>
     </div>
 </section>
 
-<footer class="footer">
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="img/sushi-logo.png" alt="Logo di Kimo Sushi" />
-    </div>
+<section class="contact-section" id="prenota">
+  <div class="container">
+    <h3 data-translate="contact_us">Contact Us</h3>
 
-    <div class="footer-links">
-      <h4>Contatti</h4>
-      <ul>
-        <li><a href="tel:+390123456789">📞 +39 012 345 6789</a></li>
-        <li><a href="mailto:info@kimosushi.it">✉️ info@kimosushi.it</a></li>
-        <li>📍 Via Roma 123, Napoli</li>
-      </ul>
-    </div>
-
-    <div class="footer-hours">
-      <h4>Orari</h4>
-      <ul>
-        <li>Lun - Ven: 12:00 - 15:00 / 19:00 - 23:00</li>
-        <li>Sab - Dom: 12:00 - 23:30</li>
-      </ul>
-    </div>
-
-    <div class="footer-social">
-      <h4>Seguici</h4>
-      <a href="#" aria-label="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a href="#" aria-label="TripAdvisor"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    </div>
+      <div class="contact-container">
+          <div class="contact-form">
+              <form id="contact-form" action="/contact" method="post">
+                  <div class="form-group">
+                      <label for="contact-name" data-translate="name">Name</label>
+                      <input type="text" id="contact-name" name="name" class="form-control" required="">
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="contact-email" data-translate="email">Email</label>
+                      <input type="email" id="contact-email" name="email" class="form-control" required="">
+                  </div>
+                  
+                  <div class="form-group">
+                      <label for="contact-message" data-translate="message">Message</label>
+                      <textarea id="contact-message" name="message" class="form-control" rows="5" required=""></textarea>
+                  </div>
+                  
+                  <div class="form-group">
+                      <button type="submit" class="btn-primary" data-translate="send_message">Send Message</button>
+                  </div>
+              </form>
+          </div>
+          
+          <div class="contact-info">
+              <div class="contact-card">
+                  <h4><i class="fas fa-map-marker-alt"></i> <span data-translate="our_location">Our Location</span></h4>
+                  <p data-translate="address">123 Sushi Street, Downtown, City</p>
+              </div>
+              
+              <div class="contact-card">
+                  <h4><i class="fas fa-clock"></i> <span data-translate="open_hours">Opening Hours</span></h4>
+                  <p data-translate="mon_fri">Monday - Friday: 11:00 - 22:00</p>
+                  <p data-translate="sat_sun">Saturday - Sunday: 12:00 - 23:00</p>
+              </div>
+              
+              <div class="contact-card">
+                  <h4><i class="fas fa-phone"></i> <span data-translate="call_us">Call Us</span></h4>
+                  <p data-translate="phone_number">+1 234 567 8900</p>
+              </div>
+              
+              <div class="map-container">
+                  <!-- Embed Google Map -->
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1628287767252!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+          </div>
+      </div>
   </div>
+</section>
 
-  <div class="footer-bottom">
-    <p>&copy; 2025 Kimo Sushi. Tutti i diritti riservati.</p>
+
+    
+
+<footer class="footer">
+  <div class="footer-content">
+    <h3>Prenota un tavolo</h3>
+    <form class="booking-form-horizontal" action="#" method="post">
+      <input type="text" name="name" placeholder="Nome*" required>
+      <input type="email" name="email" placeholder="Email*" required>
+      <input type="date" name="date" required>
+      <input type="time" name="time" required>
+      <input type="number" name="people" min="1" max="20" placeholder="Persone*" required>
+      <button type="submit" class="btn-submit">Prenota</button>
+    </form>
+    <p class="footer-note">© 2025 Kimo Sushi. Tutti i diritti riservati.</p>
   </div>
 </footer>
 
 
 
 
-  <div id="social-bar"><a href="#" id="social-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#" id="social-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#" id="social-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-  </div>
-  <div id="scrolltop">
-  		<i class="fa fa-chevron-up" aria-hidden="true"></i>
-  </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <div id="social-bar"><a href="#" id="social-facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#" id="social-instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a> <a href="#" id="social-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <div id="scrolltop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-
-
-
-<!-- Javascript GoogleMaps API -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-
-<!-- Plugin navScroll -->
-<script type="text/javascript" src="js/jquery.navScroll.js"></script>
-
-<!-- Plugin Googlemaps-->
-<script type="text/javascript" src="js/googlemaps.js"></script>
-
-<!-- Plugin Fullpage-->
-<script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
-<script>
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navbarLinks = document.querySelector('.navbar-links');
-
-  menuToggle.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active');
-  });
-</script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 
 
-<!-- Inizializzazioni-->
 
-<script type="text/javascript">
+    <!-- Javascript GoogleMaps API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 
-//Navigazione
-$('.nav').navScroll();
-$('.arrow').navScroll();
+    <!-- Plugin navScroll -->
+    <script type="text/javascript" src="js/jquery.navScroll.js"></script>
 
-// Smooth scroll to #prenota
-$('a[href="#prenota"]').click(function (e) {
-  e.preventDefault(); // Prevent the default anchor behavior
-  $('html, body').animate(
-    {
-      scrollTop: $($.attr(this, 'href')).offset().top,
-    },
-    800 // Duration of the scroll in milliseconds
-  );
-});
+    <!-- Plugin Googlemaps-->
+    <script type="text/javascript" src="js/googlemaps.js"></script>
 
-// Scrolltop
-$(window).scroll(function(){
-			if($(document).scrollTop() > 500){
-				$("#scrolltop").fadeIn();
+    <!-- Plugin Fullpage-->
+    <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+          const navbarLinks = document.querySelector('.navbar-links');
+        
+          menuToggle.addEventListener('click', () => {
+            navbarLinks.classList.toggle('active');
+          });
+    </script>
 
-			}
-			else{
-				$("#scrolltop").fadeOut();
-			}
-})
 
-$("#scrolltop, .navbar-brand").click(function(){
-			$("html,body").animate({ scrollTop: 0})
-})
+    <!-- Inizializzazioni-->
 
-$(window).on("load", function(){
-	$("#preload").fadeOut(1000);
-})
+    <script type="text/javascript">
+        //Navigazione
+        $('.nav').navScroll();
+        $('.arrow').navScroll();
+        // Update root html class to set CSS colors
+        const toggleDarkMode = () => {
+          const root = document.querySelector('html');
+          root.classList.toggle('dark');
+        }
+        // Update local storage value for colorScheme
+        const toggleColorScheme = () => {
+          const colorScheme = localStorage.getItem('colorScheme');
+          if (colorScheme === 'light') localStorage.setItem('colorScheme', 'dark');
+          else localStorage.setItem('colorScheme', 'light');
+        }
+        
+        // Set toggle input handler
+        const toggle = document.querySelector('#color-mode-switch input[type="checkbox"]');
+        if (toggle) toggle.onclick = () => {
+          toggleDarkMode();
+          toggleColorScheme();
+        }
+        
+        // Check for color scheme on init
+        const checkColorScheme = () => {
+          const colorScheme = localStorage.getItem('colorScheme');
+          // Default to light for first view
+          if (colorScheme === null || colorScheme === undefined) localStorage.setItem('colorScheme', 'light');
+          // If previously saved to dark, toggle switch and update colors
+          if (colorScheme === 'dark') {
+            toggle.checked = true;
+            toggleDarkMode();
+          }
+        }
+        checkColorScheme();
+        // Smooth scroll to #prenota
+        $('a[href="#prenota"]').click(function (e) {
+          e.preventDefault(); // Prevent the default anchor behavior
+          $('html, body').animate(
+            {
+              scrollTop: $($.attr(this, 'href')).offset().top,
+            },
+            800 // Duration of the scroll in milliseconds
+          );
+        });
+        
+        // Scrolltop
+        $(window).scroll(function(){
+        			if($(document).scrollTop() > 500){
+        				$("#scrolltop").fadeIn();
+        
+        			}
+        			else{
+        				$("#scrolltop").fadeOut();
+        			}
+        })
+        
+        $("#scrolltop, .navbar-brand").click(function(){
+        			$("html,body").animate({ scrollTop: 0})
+        })
+        
+        $(window).on("load", function(){
+        	$("#preload").fadeOut(1000);
+        })
+        
+        // Google Maps Initialization
+        function initMap() {
+          const location = { lat: 41.9028, lng: 12.4964 }; // Example coordinates (Rome)
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 12,
+            center: location,
+          });
+          const marker = new google.maps.Marker({
+            position: location,
+            map: map,
+          });
+        }
 
-// Google Maps Initialization
-function initMap() {
-  const location = { lat: 41.9028, lng: 12.4964 }; // Example coordinates (Rome)
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 12,
-    center: location,
-  });
-  const marker = new google.maps.Marker({
-    position: location,
-    map: map,
-  });
-}
-</script>
-	</body>
+        // Add active class to navbar items based on the visible section
+        window.addEventListener('scroll', () => {
+          const sections = document.querySelectorAll('section'); // Select all sections
+          const navLinks = document.querySelectorAll('.menu li a'); // Select all navbar links
+
+          let currentSection = '';
+
+          // Loop through sections to find the one currently in view
+          sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop - sectionHeight / 3) {
+              currentSection = section.getAttribute('id'); // Get the section's ID
+            }
+          });
+
+          // Remove active class from all links and add it to the current section's link
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+              link.classList.add('active');
+            }
+          });
+        });
+
+        // Intersection Observer for animations
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('in-view'); // Add the 'in-view' class when the element is visible
+                observer.unobserve(entry.target); // Stop observing once the animation starts
+              }
+            });
+          },
+          {
+            threshold: 0.2, // Trigger when 20% of the element is visible
+          }
+        );
+
+        // Select all elements with animation classes
+        const animatedElements = document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-top, .fade-in');
+        animatedElements.forEach(element => {
+          observer.observe(element); // Observe each element
+        });
+
+        // Intersection Observer for .bg-salmon
+        const bgSalmonObserver = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                // Add the 'in-view' class to all .col-lg-4 elements when .bg-salmon is visible
+                const colLg4Elements = document.querySelectorAll('.bg-salmon .col-lg-4');
+                colLg4Elements.forEach(element => {
+                  element.classList.add('in-view');
+                });
+                observer.unobserve(entry.target); // Stop observing .bg-salmon
+              }
+            });
+          },
+          {
+            threshold: 0.2, // Trigger when 20% of .bg-salmon is visible
+          }
+        );
+
+        // Observe the .bg-salmon section
+        const bgSalmonSection = document.querySelector('.bg-salmon');
+        if (bgSalmonSection) {
+          bgSalmonObserver.observe(bgSalmonSection);
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/75a5d18935.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

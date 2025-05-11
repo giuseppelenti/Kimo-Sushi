@@ -114,6 +114,7 @@ html, body {
 	html {
 	background-color: var(--color-bg);
 	color: var(--color-text);
+	scroll-behavior: smooth;
 	}
 
 	body {
@@ -553,6 +554,7 @@ p{
   
 	.menu-item {
 	  max-width: 90%;
+	  height: auto;
 	}
   }
   
@@ -1275,7 +1277,6 @@ p{
 	/*************************************************** Mobile ***************************************************/
 		/* Responsive Menu for Small Screens */
 		@media (max-width: 768px) {
-			
 			.header {
 			  justify-content: space-between; /* Keep logo and menu icon aligned */
 			}

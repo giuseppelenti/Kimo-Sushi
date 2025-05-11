@@ -456,6 +456,27 @@
           menuToggle.addEventListener('click', () => {
             navbarLinks.classList.toggle('active');
           });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.menu a').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent default anchor behavior
+
+            const targetId = this.getAttribute('href').substring(1); // Get the target section ID
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              const offset = 80; // Adjust for fixed header height
+              const elementPosition = targetElement.offsetTop;
+              const offsetPosition = elementPosition - offset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth' // Enable smooth scrolling
+              });
+            }
+          });
+        });
     </script>
 
 

@@ -93,7 +93,7 @@
         <h1 class="main-title">Il gusto della tradizione</h1>
         <h2 class="secondary-title">伝統の味</h2>
         <p>
-        <a href="#prenota" class="button">Prenota</a>
+        <a href="#contatti" class="button">Prenota</a>
         </p>
       </div>
 
@@ -408,7 +408,7 @@
 
     
 
-<footer class="footer">
+<footer class="footer" id="contatti">
   <div class="footer-content">
     <h3>Prenota un tavolo</h3>
     <form class="booking-form-horizontal" action="#" method="post">
@@ -477,6 +477,23 @@
             }
           });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const lazyImages = document.querySelectorAll("img.lazyload");
+          const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                img.classList.remove("lazyload");
+                observer.unobserve(img);
+              }
+            });
+          });
+
+          lazyImages.forEach(img => observer.observe(img));
+        });
+
     </script>
 
 

@@ -41,16 +41,16 @@
 <img src=img/sushi-logo.png alt="Kimo Sushi Logo" width=50px height=50px>
 </a>
 <nav>
-<input class=menu-btn type=checkbox id=menu-btn aria-label="Toggle Navigation Menu">
-<label class=menu-icon for=menu-btn>
-<span class=navicon></span>
-</label>
-<ul class=menu>
-<li><a href=#cover>Home</a></li>
-<li><a href=#menu>Menu</a></li>
-<li><a href=#about>About</a></li>
-<li><a href=#prenota>Contact</a></li>
-</ul>
+  <input class="menu-btn" type="checkbox" id="menu-btn" aria-label="Toggle Navigation Menu">
+  <label class="menu-icon" for="menu-btn">
+    <span class="navicon"></span>
+  </label>
+  <ul class="menu">
+    <li><a href="#cover">Home</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#prenota">Contact</a></li>
+  </ul>
 </nav>
 </header>
 <div class=caption>
@@ -341,7 +341,66 @@
 <script src=js/googlemaps.js></script>
 <script src=js/jquery.onepage-scroll.js></script>
 <script>const menuToggle=document.querySelector(".menu-toggle"),navbarLinks=document.querySelector(".navbar-links");menuToggle.addEventListener("click",(()=>{navbarLinks.classList.toggle("active")})),document.querySelectorAll(".menu a").forEach((e=>{e.addEventListener("click",(function(e){e.preventDefault();const t=this.getAttribute("href").substring(1),n=document.getElementById(t);if(n){const e=80,t=n.offsetTop-e;window.scrollTo({top:t,behavior:"smooth"})}}))})),document.addEventListener("DOMContentLoaded",(function(){const e=document.querySelectorAll("img.lazyload"),t=new IntersectionObserver(((e,t)=>{e.forEach((e=>{if(e.isIntersecting){const n=e.target;n.src=n.dataset.src,n.classList.remove("lazyload"),t.unobserve(n)}}))}));e.forEach((e=>t.observe(e)))}))</script>
-<script>$(".nav").navScroll(),$(".arrow").navScroll();const toggleDarkMode=()=>{document.querySelector("html").classList.toggle("dark")},toggleColorScheme=()=>{"light"===localStorage.getItem("colorScheme")?localStorage.setItem("colorScheme","dark"):localStorage.setItem("colorScheme","light")},toggle=document.querySelector('#color-mode-switch input[type="checkbox"]');toggle&&(toggle.onclick=()=>{toggleDarkMode(),"light"===localStorage.getItem("colorScheme")?localStorage.setItem("colorScheme","dark"):localStorage.setItem("colorScheme","light")});const checkColorScheme=()=>{const e=localStorage.getItem("colorScheme");null==e&&localStorage.setItem("colorScheme","light"),"dark"===e&&(toggle.checked=!0,toggleDarkMode())};function initMap(){const e={lat:41.9028,lng:12.4964},o=new google.maps.Map(document.getElementById("map"),{zoom:12,center:e});new google.maps.Marker({position:e,map:o})}checkColorScheme(),$('a[href="#prenota"]').click((function(e){e.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},800)})),$(window).scroll((function(){$(document).scrollTop()>500?$("#scrolltop").fadeIn():$("#scrolltop").fadeOut()})),$("#scrolltop, .navbar-brand").click((function(){$("html,body").animate({scrollTop:0})})),$(window).on("load",(function(){$("#preload").fadeOut(1e3)})),window.addEventListener("scroll",(()=>{const e=document.querySelectorAll("section"),o=document.querySelectorAll(".menu li a");let t="";e.forEach((e=>{const o=e.offsetTop,l=e.offsetHeight;window.scrollY>=o-l/3&&(t=e.getAttribute("id"))})),o.forEach((e=>{e.classList.remove("active"),e.getAttribute("href")===`#${t}`&&e.classList.add("active")}))}));const observer=new IntersectionObserver(((e,o)=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add("in-view"),o.unobserve(e.target))}))}),{threshold:.2}),animatedElements=document.querySelectorAll(".slide-in-left, .slide-in-right, .slide-in-top, .fade-in");animatedElements.forEach((e=>{observer.observe(e)}));const bgSalmonObserver=new IntersectionObserver(((e,o)=>{e.forEach((e=>{if(e.isIntersecting){document.querySelectorAll(".bg-salmon .col-lg-4").forEach((e=>{e.classList.add("in-view")})),o.unobserve(e.target)}}))}),{threshold:.2}),bgSalmonSection=document.querySelector(".bg-salmon");bgSalmonSection&&bgSalmonObserver.observe(bgSalmonSection)</script>
+<script>$(".nav").navScroll(),$(".arrow").navScroll();const toggleDarkMode=()=>{document.querySelector("html").classList.toggle("dark")},toggleColorScheme=()=>{"light"===localStorage.getItem("colorScheme")?localStorage.setItem("colorScheme","dark"):localStorage.setItem("colorScheme","light")},toggle=document.querySelector('#color-mode-switch input[type="checkbox"]');toggle&&(toggle.onclick=()=>{toggleDarkMode(),"light"===localStorage.getItem("colorScheme")?localStorage.setItem("colorScheme","dark"):localStorage.setItem("colorScheme","light")});const checkColorScheme=()=>{const e=localStorage.getItem("colorScheme");null==e&&localStorage.setItem("colorScheme","light"),"dark"===e&&(toggle.checked=!0,toggleDarkMode())};function initMap(){const e={lat:41.9028,lng:12.4964},o=new google.maps.Map(document.getElementById("map"),{zoom:12,center:e});new google.maps.Marker({position:e,map:o})}checkColorScheme(),$('a[href="#prenota"]').click((function(e){e.preventDefault(),$("html, body").animate({scrollTop:$($.attr(this,"href")).offset().top},800)})),$(window).scroll((function(){$(document).scrollTop()>500?$("#scrolltop").fadeIn():$("#scrolltop").fadeOut()})),$("#scrolltop, .navbar-brand").click((function(){$("html,body").animate({scrollTop:0})})),$(window).on("load",(function(){$("#preload").fadeOut(1e3)})),window.addEventListener("scroll",(()=>{const e=document.querySelectorAll("section"),o=document.querySelectorAll(".menu li a");let t="";e.forEach((e=>{const o=e.offsetTop,l=e.offsetHeight;window.scrollY>=o-l/3&&(t=e.getAttribute("id"))})),o.forEach((e=>{e.classList.remove("active"),e.getAttribute("href")===`#${t}`&&e.classList.add("active")})),console.log(`Current Section: ${t}`)}));const observer=new IntersectionObserver(((e,o)=>{e.forEach((e=>{e.isIntersecting&&(e.target.classList.add("in-view"),o.unobserve(e.target))}))}),{threshold:.2}),animatedElements=document.querySelectorAll(".slide-in-left, .slide-in-right, .slide-in-top, .fade-in");animatedElements.forEach((e=>{observer.observe(e)}));const bgSalmonObserver=new IntersectionObserver(((e,o)=>{e.forEach((e=>{if(e.isIntersecting){document.querySelectorAll(".bg-salmon .col-lg-4").forEach((e=>{e.classList.add("in-view")})),o.unobserve(e.target)}}))}),{threshold:.2}),bgSalmonSection=document.querySelector(".bg-salmon");bgSalmonSection&&bgSalmonObserver.observe(bgSalmonSection)</script>
+<script>
+// Dynamically update the active class in the navbar
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("section"); // Select all sections
+  const navLinks = document.querySelectorAll(".menu li a"); // Select all navbar links
+
+  // Function to update the active class
+  const updateActiveLink = () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 80; // Adjust for fixed header height
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSection = section.getAttribute("id"); // Get the ID of the current section
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active"); // Remove active class from all links
+      if (link.getAttribute("href").substring(1) === currentSection) {
+        link.classList.add("active"); // Add active class to the current link
+      }
+    });
+  };
+
+  // Listen for scroll events
+  window.addEventListener("scroll", updateActiveLink);
+
+  // Update active link on page load
+  updateActiveLink();
+
+  // Smooth scrolling for navigation links
+  navLinks.forEach(link => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault(); // Prevent default anchor behavior
+
+      const targetId = this.getAttribute("href").substring(1); // Get the target section ID
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const offset = 80; // Adjust for fixed header height
+        const elementPosition = targetElement.offsetTop;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth"
+        });
+
+        // Update active class immediately after clicking
+        navLinks.forEach(link => link.classList.remove("active"));
+        this.classList.add("active");
+      }
+    });
+  });
+});
+</script>
 <script src=https://kit.fontawesome.com/75a5d18935.js crossorigin=anonymous></script>
 </body>
 </html>

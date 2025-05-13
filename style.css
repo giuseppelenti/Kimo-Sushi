@@ -244,24 +244,26 @@ p{
 	margin: 0 15px; /* Add spacing between menu items */
 	}
 
-	.header .menu li a {
+	/* Default styles for navbar links */
+	.menu li a {
+	color: #000000; /* Default text color */
 	text-decoration: none;
-	color: rgb(0, 0, 0);
-	font-weight: bold;
+	padding: 10px 15px;
+	border-bottom: none; /* Ensure no border by default */
+	transition: color 0.3s ease, border-bottom 0.3s ease;
 	text-transform: uppercase;
-	font-size: 1.4rem; /* Adjust font size */
-	transition: border-bottom 0.3s linear; /* Add linear transition for border-bottom */
-	padding-bottom: 10px;
-	border-bottom: 1px solid transparent; /* Start with a transparent border */
+	font-weight: bold;
 	}
 
+	/* Active link styles */
 	.menu li a.active {
-	border-bottom: 2px solid#FF6B6B; /* Add a border to indicate the active link */
-	transition: border-bottom 0.3s ease, color 0.3s ease; /* Smooth transition */
+	color: #FF6B6B; /* Highlight active link */
+	border-bottom: 2px solid #FF6B6B; /* Add border for active link */
 	}
 
-	.header .menu li a:hover {
-	border-bottom: 1px solid white; /* Add underline on hover */
+	/* Hover styles */
+	.menu li a:hover {
+	color: #FF6B6B; /* Change color on hover */
 	}
 
 	.menu li a i {
@@ -1060,7 +1062,7 @@ p{
 	  }
 	  
 	  .booking-form-horizontal input,
-	  .booking-form-horizontal button, {
+	  .booking-form-horizontal button {
 		color: black;
 		padding: 10px;
 		font-size: 14px;
@@ -1319,6 +1321,12 @@ p{
 			.header .menu a:hover {
 			  background-color: rgba(255, 255, 255, 0.2); /* Add a hover effect */
 			  transition: background-color 0.3s ease; /* Smooth transition */
+			}
+
+			.menu li a.active {
+			  color: #FF6B6B; /* Keep active link color */
+			  border-bottom: none; /* Remove border for active links on small screens */
+			  font-weight: bold; /* Optional: Make active link stand out */
 			}
 
 			.col-lg-6 {

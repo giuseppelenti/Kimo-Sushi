@@ -1060,7 +1060,8 @@ p{
 	  }
 	  
 	  .booking-form-horizontal input,
-	  .booking-form-horizontal button {
+	  .booking-form-horizontal button, {
+		color: black;
 		padding: 10px;
 		font-size: 14px;
 		border-radius: 6px;

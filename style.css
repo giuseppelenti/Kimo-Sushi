@@ -278,7 +278,7 @@ p{
 	}
 
 	.header .menu-icon .navicon {
-	background: white;
+	background: rgb(0, 0, 0);
 	display: block;
 	height: 2px;
 	width: 22px;
@@ -288,7 +288,7 @@ p{
 
 	.header .menu-icon .navicon:before,
 	.header .menu-icon .navicon:after {
-	background: white;
+	background: rgb(0, 0, 0);
 	content: '';
 	display: block;
 	height: 100%;
@@ -312,7 +312,7 @@ p{
 	.header .menu-btn:checked ~ .menu {
 	display: flex; /* Show the menu when the menu button is checked */
 	flex-direction: column; /* Stack menu items vertically */
-	background-color: rgba(0, 0, 0, 0.8); /* Add a background color for the dropdown */
+	background-color: rgba(255, 255, 255, 0.8); /* Add a background color for the dropdown */
 	position: absolute;
 	top: 100%; /* Position below the header */
 	left: 0;
@@ -1290,7 +1290,7 @@ p{
 			.header .menu-btn:checked ~ .menu {
 			  display: flex; /* Show the menu when the menu button is checked */
 			  flex-direction: column; /* Stack menu items vertically */
-			  background-color: #0c1f0c; /* Add a background color for the dropdown */
+			  background-color: #ffffff; /* Add a background color for the dropdown */
 			  position: absolute;
 			  top: 100%; /* Position below the header */
 			  left: 0;
@@ -1298,6 +1298,7 @@ p{
 			  z-index: 2;
 			  margin: 0;
 			  padding: 0;
+			          box-shadow: black -1px 6px 6px -5px;
 			}
 	  
 			.header .menu li {
